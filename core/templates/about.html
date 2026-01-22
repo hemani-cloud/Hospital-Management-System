@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+    <div class="about-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-image">
+            <img src="{% static 'Images\doctor_johnson.png' %}" alt="Dr. Johnson">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-content">
+            <h2>About Dr. Johnson</h2>
+            <span class="underline"></span>
+
+            <!-- SOCIAL ICONS -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis
+                quam sed tincidunt accumsan. Aliquam at tincidunt tortor, ac porta turpis.
+                Curabitur lacinia venenatis semper.
+            </p>
+
+            <p>
+                Aliquam ut nibh ut lacus posuere facilisis. Vestibulum ullamcorper arcu et
+                bibendum ultrices. Suspendisse rutrum turpis vitae.
+            </p>
+
+            <a href="#" class="read-more-btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION & EXPERIENCE -->
+<section class="edu-exp-section">
+    <div class="edu-exp-container">
+
+        <!-- EDUCATION -->
+        <div class="edu-card">
+            <h3>Education</h3>
+            <p>
+                Medical School - University of Dulton Health Science Center.
+            </p>
+            <p>
+                Residency in Family Medicine - University of Dulton Health
+                Science Center.
+            </p>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="exp-card">
+            <h3>Experience</h3>
+            <p>
+                Medical School - University of Dulton Health Science Center.
+            </p>
+            <p>
+                Residency in Family Medicine - University of Dulton Health
+                Science Center.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

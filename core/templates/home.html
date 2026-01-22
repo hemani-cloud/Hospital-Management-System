@@ -1,0 +1,272 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+    <div class="about-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-image">
+            <img src="{% static 'Images\doctor_johnson.png' %}" alt="Dr. Johnson">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-content">
+            <h2>About Dr. Johnson</h2>
+            <span class="underline"></span>
+
+            <!-- SOCIAL ICONS -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis
+                quam sed tincidunt accumsan. Aliquam at tincidunt tortor, ac porta turpis.
+                Curabitur lacinia venenatis semper.
+            </p>
+
+            <p>
+                Aliquam ut nibh ut lacus posuere facilisis. Vestibulum ullamcorper arcu et
+                bibendum ultrices. Suspendisse rutrum turpis vitae.
+            </p>
+
+            <a href="#" class="read-more-btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION & EXPERIENCE -->
+<section class="edu-exp-section">
+    <div class="edu-exp-container">
+
+        <!-- EDUCATION -->
+        <div class="edu-card">
+            <h3>Education</h3>
+            <p>
+                Medical School - University of Dulton Health Science Center.
+            </p>
+            <p>
+                Residency in Family Medicine - University of Dulton Health
+                Science Center.
+            </p>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="exp-card">
+            <h3>Experience</h3>
+            <p>
+                Medical School - University of Dulton Health Science Center.
+            </p>
+            <p>
+                Residency in Family Medicine - University of Dulton Health
+                Science Center.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- SERVICES SECTION -->
+<section class="services-section">
+    <h2 class="section-title">Services</h2>
+    <span class="title-underline"></span>
+
+    <div class="services-container">
+
+        <!-- Service 1 -->
+        <div class="service-card">
+            <img src="{% static 'Images/Consultation.png' %}" alt="Consultation">
+            <h3>CONSULTATION</h3>
+            <p class="time-price">20 Min | $50.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+            <img src="{% static 'Images/Health checkup.png' %}" alt="Health Checkup">
+            <h3>HEALTH CHECKUP</h3>
+            <p class="time-price">30 Min | $30.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+            <img src="{% static 'Images/FLU shots.png' %}" alt="Flu Shots">
+            <h3>FLU SHOTS</h3>
+            <p class="time-price">10 Min | $15.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+            <img src="{% static 'Images/Blood test.png' %}" alt="Blood Test">
+            <h3>BLOOD TEST</h3>
+            <p class="time-price">30 Min | $10.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Physical Exam.png' %}" alt="Blood Test">
+            <h3>PHYSICAL EXAMS</h3>
+            <p class="time-price">30 Min | $50.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Prevention.png' %}" alt="Blood Test">
+            <h3>PREVENTION</h3>
+            <p class="time-price">10 Min | $20.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Family Plan.png' %}" alt="Blood Test">
+            <h3>FAMILY PLANNING</h3>
+            <p class="time-price">30 Min | $20.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Home Visit.png' %}" alt="Blood Test">
+            <h3>HOME VISIT</h3>
+            <p class="time-price">30 Min | $30.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#" class="btn-book">Book Now</a>
+        </div>
+    </div>
+</section>
+
+ <h1 class="myassis">Meet My Assistant</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="{% static 'Images/maureen.png' %}" alt="Maureen L. Reidy">
+      <div class="name">Maureen L. Reidy</div>
+      <div class="title">Assistant Nurse</div>
+      <div class="bio">Lorem ipsum dolor sit amet adipiscing elit. Proin consequat cursus sit amet elit proin consequat.</div>
+    </div>
+    <div class="card">
+      <img src="{% static 'Images/janelle.png' %}" alt="Janelle J. Hittle">
+      <div class="name">Janelle J. Hittle</div>
+      <div class="title">Assistant Nurse</div>
+      <div class="bio">Lorem ipsum dolor sit amet adipiscing elit. Proin consequat cursus sit amet elit proin consequat.</div>
+    </div>
+    <div class="card">
+      <img src="{% static 'Images/michael.png' %}" alt="Michael C. Powell">
+      <div class="name">Michael C. Powell</div>
+      <div class="title">Assistant Nurse</div>
+      <div class="bio">Lorem ipsum dolor sit amet adipiscing elit. Proin consequat cursus sit amet elit proin consequat.</div>
+    </div>
+  </div>
+
+  <!-- HAPPY CLIENT SECTION -->
+<section class="testimonial-section">
+    <div class="overlay"></div>
+
+    <h2 class="section-title light">Happy Client</h2>
+    <span class="title-underline light"></span>
+
+    <div class="testimonial-box">
+        <div class="client-img">
+            <img src="{% static 'Images/client.png' %}" alt="Client">
+        </div>
+
+        <div class="client-content">
+            <h3>Jamie D. Boyd</h3>
+            <span>Oral Radiologist</span>
+
+            <p class="quote">
+                <span class="quote-mark">“</span>
+                Commodo sed hendrerit id, posuere tempus odio. Phasellus vel leo
+                aliquam, interdum massa quis, aliquam sapien. Aliquam erat volutpat.
+                Etiam nec feugiat libero. Phasellus in ipsum nunc.
+                <span class="quote-mark">”</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Slider dots -->
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+{% load static %}
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <span class="title-underline"></span>
+
+    <div class="contact-container">
+
+        <!-- LEFT BOX -->
+        <div class="contact-info">
+            <h3>Opening Hours</h3>
+
+            <p>Monday-Friday: 9am to 7pm</p>
+            <p>Saturday: 9am to 4pm</p>
+            <p>Sunday: Closed</p>
+
+            <hr>
+
+            <h3>Contact Info</h3>
+            <p>4137 State Street, CA, USA</p>
+            <p>+1-234-567-8900</p>
+            <p>info@example.com</p>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="contact-form">
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <input type="text" name="subject" placeholder="Subject" required>
+
+                <textarea name="message" rows="6" placeholder="Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+{% endblock %}

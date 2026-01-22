@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="booking-section">
+    <h1 class="booking-title">
+        Book For Getting Services
+        <span></span>
+    </h1>
+
+    <form method="POST" class="booking-form">
+        {% csrf_token %}
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>First Name</label>
+                <input name="name" type="text" placeholder="E.g. John Sina" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="E.g. email@example.com" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Mobile</label>
+                <input type="text" name="mobile" placeholder="E.g. +1 234 567 8900" required>
+            </div>
+
+            <div class="form-group">
+                <label>Select a Service</label>
+                <select name="service" required>
+                    <option value="Consultation">Consultation</option>
+                    <option value="Health Checkup">Health Checkup</option>
+                    <option value="Flu Shots">Flu Shots</option>
+                    <option value="Blood Test">Blood Test</option>
+                    <option value="Physical Exam">Physical Exam</option>
+                    <option value="Prevention">Prevention</option>
+                    <option value="Family Planning">Family Planning</option>
+                    <option value="Home Visit">Home Visit</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Appointment Date</label>
+                <input type="date" name="appointment_date" placeholder="E.g. MM/DD/YYYY">
+            </div>
+
+            <div class="form-group">
+                <label>Appointment Time</label>
+                <input type="time" name="appointment_time" required>
+            </div>
+        </div>
+
+        <div class="form-group full">
+            <label>Special Request</label>
+            <input type="text" name="message" placeholder="E.g. Special Request">
+        </div>
+
+        <button type="submit" class="book-btn">Book Now</button>
+    </form>
+</section>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Our Doctors</h2>
+
+    <div class="row">
+        {% for doctor in doctors %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <img src="{{ doctor.image.url }}" class="card-img-top" alt="{{ doctor.name }}">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ doctor.name }}</h5>
+                    <p class="text-muted">{{ doctor.specialization }}</p>
+                    <p>Experience: {{ doctor.experience }} Years</p>
+                    <p>Available: {{ doctor.available_days }}</p>
+                    <a href="/booking/" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-center">No doctors available</p>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

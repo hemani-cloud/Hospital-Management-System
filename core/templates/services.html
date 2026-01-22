@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- SERVICES SECTION -->
+<section class="services-section">
+    <h2 class="section-title">Services</h2>
+    <span class="title-underline"></span>
+
+    <div class="services-container">
+
+        <!-- Service 1 -->
+        <div class="service-card">
+            <img src="{% static 'Images/Consultation.png' %}" alt="Consultation">
+            <h3>CONSULTATION</h3>
+            <p class="time-price">20 Min | $50.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+            <img src="{% static 'Images/Health checkup.png' %}" alt="Health Checkup">
+            <h3>HEALTH CHECKUP</h3>
+            <p class="time-price">30 Min | $30.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+            <img src="{% static 'Images/FLU shots.png' %}" alt="Flu Shots">
+            <h3>FLU SHOTS</h3>
+            <p class="time-price">10 Min | $15.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+            <img src="{% static 'Images/Blood test.png' %}" alt="Blood Test">
+            <h3>BLOOD TEST</h3>
+            <p class="time-price">30 Min | $10.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Physical Exam.png' %}" alt="Blood Test">
+            <h3>PHYSICAL EXAMS</h3>
+            <p class="time-price">30 Min | $50.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Prevention.png' %}" alt="Blood Test">
+            <h3>PREVENTION</h3>
+            <p class="time-price">10 Min | $20.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Family Plan.png' %}" alt="Blood Test">
+            <h3>FAMILY PLANNING</h3>
+            <p class="time-price">30 Min | $20.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+
+         <div class="service-card">
+            <img src="{% static 'Images/Home Visit.png' %}" alt="Blood Test">
+            <h3>HOME VISIT</h3>
+            <p class="time-price">30 Min | $30.00</p>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

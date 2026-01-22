@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="text-center mb-4">Appointment Details</h2>
+
+        <table class="table table-bordered table-striped">
+            <tbody>
+                <tr>
+                    <th>Patient Name</th>
+                    <td>{{ appointment.name }}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ appointment.email }}</td>
+                </tr>
+                <tr>
+                    <th>Mobile</th>
+                    <td>{{ appointment.mobile }}</td>
+                </tr>
+                <tr>
+                    <th>Service</th>
+                    <td>{{ appointment.service }}</td>
+                </tr>
+                <tr>
+                    <th>Appointment Date</th>
+                    <td>{{ appointment.appointment_date }}</td>
+                </tr>
+                <tr>
+                    <th>Appointment Time</th>
+                    <td>{{ appointment.appointment_time }}</td>
+                </tr>
+                <tr>
+                    <th>Message</th>
+                    <td>{{ appointment.message }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-primary">Back to Home</a>
+            <a href="/booking/" class="btn btn-success ms-2">Book Another</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
