@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h2>Payment Page</h2>
+
+<p><strong>Patient:</strong> {{ appointment.name }}</p>
+<p><strong>Doctor:</strong> {{ appointment.doctor }}</p>
+<p><strong>Amount:</strong> ₹500</p>
+
+<form method="post">
+    {% csrf_token %}
+    <label>
+        <input type="radio" name="method" required> Google Pay
+    </label><br>
+    <label>
+        <input type="radio" name="method" required> PhonePe
+    </label><br>
+    <label>
+        <input type="radio" name="method" required> Cash
+    </label><br><br>
+
+    <button type="submit">Pay Now</button>
+</form>
+{% endblock %}

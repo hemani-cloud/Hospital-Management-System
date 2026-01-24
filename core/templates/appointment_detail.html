@@ -38,10 +38,21 @@
             </tbody>
         </table>
 
-        <div class="text-center mt-4">
-            <a href="/" class="btn btn-primary">Back to Home</a>
-            <a href="/booking/" class="btn btn-success ms-2">Book Another</a>
-        </div>
+<div style="margin-top:20px;">
+    <a href="{% url 'payment' appointment.id %}">
+        <button style="
+            background:#b22222;
+            color:white;
+            padding:12px 25px;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;">
+            Proceed to Payment
+        </button>
+    </a>
+</div>
+
     </div>
 </div>
 

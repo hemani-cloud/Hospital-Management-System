@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "hospital-mgmt"
+version = "0.1.0"
+description = "Hospital Management System"
+authors = ["Hemalatha"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^6.0"
+gunicorn = "^21.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

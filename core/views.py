@@ -58,6 +58,21 @@ def doctors(request):
     doctors = Doctor.objects.all()
     return render(request, "doctors.html", {"doctors": doctors})
 
+def appointment_detail(request, id):
+    appointment = get_object_or_404(Appointment, id=id)
+    return render(request, "appointment_detail.html", {"appointment": appointment})
 
+def payment(request, id):
+    appointment = get_object_or_404(Appointment, id=id)
+
+    if request.method == "POST":
+        # For now assume payment is successful
+        return redirect("payment_success", id=appointment.id)
+
+    return render(request, "payment.html", {"appointment": appointment})
+
+def payment_success(request, id):
+    appointment = get_object_or_404(Appointment, id=id)
+    return render(request, "payment_success.html", {"appointment": appointment})
 
 
